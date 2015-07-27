@@ -1,4 +1,5 @@
 var request = require('request-promise');
+var Promise = require('bluebird');
 
 request({ uri: 'http://www.google.com', resolveWithFullResponse: true})
 .then(function(google) {
